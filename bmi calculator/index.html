@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-ir">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/script.js" defer></script>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <h1 class="title">ماشین حساب شاخص توده بدنی (BMI)</h1>
+        <p class="desc">شاخص توده بدنی به تشخصی محدوده وزنی مناسب کمک می کند</p>
+        <form action="" class="form">
+            <label for="age" class="form__label">سن(سال)</label>
+            <input type="number" id="age" class="form__number-field" required>
+            <label for="weigh" class="form__label">وزن(کیلوگرم)</label>
+            <input type="number" id="weight" class="form__number-field">
+            <label for="weight" class="form__label">قد (سانتی متر)</label>
+            <input type="number" id="heigh" class="form__number-field">
+            <input type="button" value="ارزیابی" class="form__btn" id="sub-btn">
+        </form>
+        <div class="reuslt-box">
+            <h2 class="result-box__title">نتیجه نهایی ارزیابی</h2>
+            <p class="result-box__desc"></p>
+        </div>
+    </body>
+</html>

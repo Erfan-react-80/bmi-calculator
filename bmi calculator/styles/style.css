@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazirmatn-Regular.woff2');
+}
+
+:root{
+    --background: #c5c5c5;
+}
+body , body *{
+    font-family: 'Vazir';   
+}
+
+body{
+    background-color: var(--background);
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+}
+
+/* start */
+.title{
+    color: rgb(12 28 143);
+}
+.desc{
+    text-decoration: underline  ;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__number-field{
+    margin-bottom: 15px;
+    border-radius: 0px;
+    border: 1px solid rgb(48, 48, 48);
+    padding: 3px;
+    transition: all .3s;
+}
+.form__number-field:focus{
+   transform: scale(1.2);
+}
+.form__btn {
+    transition: all 0.3s;
+    margin: 20px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.form__btn:hover{
+    background-color: rgb(154, 154, 212);
+}
+
+.reuslt-box{
+    display: none;
+}
+
+.reuslt-box_show{
+    display: initial;
+}
+
+.form__number-field_error{
+    background-color: rgb(233, 192, 192);
+    transform: scale(1.1);
+}
